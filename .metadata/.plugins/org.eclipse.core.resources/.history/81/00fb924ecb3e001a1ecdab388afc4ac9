@@ -1,0 +1,15 @@
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+public class Phase1 {
+
+	public static void main(String[] args) {
+		JSONObject obj = new JSONObject();
+		
+		obj.put("question1", "Abhishek Sharma");
+		obj.put("question2","B.E");
+		obj.put("question3", "C.S.E");
+		obj.put("question4", 3);
+	}
+
+}

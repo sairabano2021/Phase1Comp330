@@ -1,0 +1,35 @@
+import java.util.List;
+
+import com.google.gson.Gson;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+
+public class Questions {
+
+	public static void main(String[] args) throws IOException {
+		Questions question = new Questions();
+		question.loadQuestions();
+
+	}
+	private void loadQuestions() throws IOException {
+		//Create list of questions object
+		List <Question> qObjectList = new ArrayList<>();
+		
+		//Create question objects
+		Question q1 = new Question(QuestionType.FILL_IN_BLANK,"What is the % operator in Java?", "Remainder operator");
+		qObjectList.add(q1);
+		
+		Question q2 = new Question(QuestionType.TRUE_FALSE,"Is Java an Object-Oriented Language?", "True");
+		qObjectList.add(q2);
+		
+		//Save question objects to JSON file
+		String json = new Gson().toJson(qObjectList);
+		Path path = Paths.get("Questions.json");
+		Files.write(path, json.getBytes());
+	}
+
+}
