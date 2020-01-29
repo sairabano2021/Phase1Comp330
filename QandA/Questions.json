@@ -1,1 +1,3 @@
-[{"displayQuestion":"What is the % operator in Java?","answerOptions":[],"correctAnswer":"Remainder operator","type":"FILL_IN_BLANK"},{"displayQuestion":"Is Java an Object-Oriented Language?","answerOptions":["True","False"],"correctAnswer":"True","type":"TRUE_FALSE"}]
+[{"displayQuestion":"What is the % operator in Java?","answerOptions":[],"correctAnswer":"Remainder operator","type":"FILL_IN_BLANK"},{"displayQuestion":"Is Java an Object-Oriented Language?","answerOptions":["True","False"],"correctAnswer":"True","type":"TRUE_FALSE"}],
+[{“displayQuestion":"To prevent any method from overriding, we declare the method as?","answerOptions":["static","constant", "final", "abstract"],"correctAnswer":"final","type":"Multiple_Choice"}],
+[{“displayQuestion":"How many types of Java are there?","answerOptions":["8","5", "7", "3"],"correctAnswer":"8","type":"Matching"}]
