@@ -31,7 +31,10 @@ public class Questions {
 
 		Question q2 = new Question(QuestionType.TRUE_FALSE,"Is Java an Object-Oriented Language?", "True");
 		qObjectList.add(q2);
-
+		Question q3 = new Question(QuestionType.Multiple_Choice,"To prevent any method from overriding, we declare the method as a. static b. constant c. final d. abstract?", "c. final");
+		qObjectList.add(q3)			
+                Question q4 = new Question(QuestionType.Matching,"How many types of Java are there 8, 5, 7, 3?", "8");
+		qObjectList.add(q4);
 		//Save question objects to JSON file
 		String json = new Gson().toJson(qObjectList);
 		Path path = Paths.get("Questions.json");
